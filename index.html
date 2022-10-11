@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Metric/Imperial Unit Conversion</title>
+  </head>
+  <body>
+    <!-- Main Card -->
+    <div id="main-card">
+      <!-- Top Card -->
+      <div id="main-card-top">
+        <!-- Main Title -->
+        <h1 id="main-title">Metric/Imperial Unit Conversion</h1>
+        <!-- Value Input -->
+        <input
+          id="input-el"
+          type="text"
+          value=""
+          placeholder="Type the value"
+        />
+        <!-- Choose Convertor -->
+        <div id="convertor-type" onclick="render()">
+          <div class="items">
+            <label class="container"
+              >Length (Meters/Feets)
+              <input id="length" type="radio" name="radio" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="items">
+            <label class="container"
+              >Volume (Liters/Gallons)
+              <input id="volume" type="radio" name="radio" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="items">
+            <label class="container"
+              >Mass (Kilograms/Pounds)
+              <input id="mass" type="radio" name="radio" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="items">
+            <label class="container"
+              >Distance (Kilometers/Miles)
+              <input id="distance" type="radio" name="radio" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <!-- Buttom Card -->
+      <div id="main-card-buttom">
+        <div id="buttom-content-container">
+          <h2 id="conversion-title">Please Choose a Convertor</h2>
+          <p id="conversion-output"></p>
+        </div>
+      </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="Script/javascript.js"></script>
+  </body>
+</html>
